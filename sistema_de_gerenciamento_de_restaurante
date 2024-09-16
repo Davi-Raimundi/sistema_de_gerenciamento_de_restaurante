@@ -1,0 +1,14 @@
+O objetivo deste projeto é criar um sistema básico para gerenciar um restaurante. O sistema deve permitir a gestão de clientes, mesas, pedidos e itens de pedido. Abaixo estão as principais funcionalidades implementadas:
+
+Clientes: Cadastro e atualização de informações dos clientes, incluindo nome, telefone e email.
+Mesas: Gerenciamento das mesas do restaurante, com detalhes sobre o número da mesa e sua capacidade.
+Pedidos: Registro e atualização dos pedidos feitos pelos clientes, associando-os a uma mesa e cliente específico.
+Itens de Pedido: Adição e modificação dos itens dentro de um pedido, incluindo descrição, quantidade e preço unitário.
+Esquema do Banco de Dados
+
+O banco de dados restaurante_db possui as seguintes tabelas:
+
+clientes: Armazena informações dos clientes.
+mesas: Armazena informações sobre as mesas do restaurante.
+pedidos: Registra pedidos feitos pelos clientes, vinculando-os a uma mesa e a um cliente.
+itens_pedido: Detalha os itens que compõem cada pedido.
