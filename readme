@@ -1,0 +1,52 @@
+# Sistema de Gerenciamento de Restaurante
+
+Este projeto consiste em um sistema de gerenciamento para restaurantes, permitindo a administração de clientes, mesas, pedidos e itens de pedido. O banco de dados é implementado usando SQL e é composto por quatro tabelas principais: `clientes`, `mesas`, `pedidos` e `itens_pedido`.
+
+## Estrutura do Banco de Dados
+
+### Tabelas
+
+- **clientes**
+  - `cliente_id` (int, PK, auto_increment)
+  - `nome` (varchar(100))
+  - `telefone` (varchar(100))
+  - `email` (varchar(100))
+
+- **mesas**
+  - `mesa_id` (int, PK, auto_increment)
+  - `numero_mesa` (int)
+  - `capacidade` (int)
+
+- **pedidos**
+  - `pedido_id` (int, PK, auto_increment)
+  - `cliente_id` (int, FK)
+  - `mesa_id` (int, FK)
+  - `data_pedido` (time)
+  - `total` (decimal(10, 2))
+
+- **itens_pedido**
+  - `item_id` (int, PK, auto_increment)
+  - `pedido_id` (int, FK)
+  - `descricao_item` (varchar(200))
+  - `quantidade` (int)
+  - `preco_unitario` (decimal(10, 2))
+
+## Operações
+
+1. **Inserir Dados**: Dados iniciais de clientes, mesas, pedidos e itens de pedido são inseridos.
+2. **Atualizar Dados**: Permite a atualização de informações de clientes, mesas, pedidos e itens de pedido.
+3. **Consultar Dados**: Consultas para visualizar dados das tabelas e relacionamentos entre elas.
+4. **Excluir Dados**: Operações de exclusão de itens de pedido, pedidos, mesas e clientes.
+
+## Uso
+
+1. **Configuração Inicial**: Execute o script SQL fornecido para criar o banco de dados e as tabelas.
+2. **Operações**: Utilize as consultas SQL para inserir, atualizar, consultar e excluir dados conforme necessário.
+
+## Contribuição
+
+Para contribuir com o projeto, faça um fork deste repositório e envie um pull request com suas alterações.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
